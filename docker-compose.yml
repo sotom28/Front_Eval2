@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: .                    # ← Construir localmente
+    image: ${DOCKERHUB_USERNAME}/frontend:latest
+    ports:
+      - "80:5000"              # ← Puerto 80 externo → 5000 contenedor
+    environment:
+       - BACKEND_URL=http://localhost:8080
+    restart: unless-stoppedclear
