@@ -13,10 +13,10 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v4
 
-      - name: Login a Docker Hub
+      - name: Login a DockerHub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}  //
+          username: ${{ secrets.DOCKERHUB_USERNAME }}  
           password: ${{ secrets.DOCKERHUB_TOKEN_FRONT_EV2 }}
 
       - name: Build y push imagen
