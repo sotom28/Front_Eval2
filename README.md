@@ -41,7 +41,7 @@ cp .env.example .env
 
 2. Editar el archivo `.env` con tu configuración:
 ```
-PORT=5000
+PORT=3000
 DEBUG=False
 BACKEND_URL=http://localhost:3000
 SECRET_KEY=clave_secreta_muy_segura_aqui
