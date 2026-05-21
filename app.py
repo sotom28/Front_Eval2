@@ -5,7 +5,7 @@ import requests
 import os
 from dotenv import load_dotenv
 
-# Cargar variables de entorno
+# Cargar variables de entorno 2
 load_dotenv()
 
 # Crear instancia de la aplicación Flask
